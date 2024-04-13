@@ -1,0 +1,36 @@
+package com.practiceLaunch;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class PracticeLaunch {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+    System.setProperty("webdriver.chrome.driver","C:\\Users\\Dhananjay Patingrao\\OneDrive\\Desktop\\Practice1\\chromedriver\\chromedriver.exe");
+	WebDriver driver = new ChromeDriver();
+	driver.get("https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0");
+	driver.findElement(By.id("ap_email")).sendKeys("9969620056");
+	Thread.sleep(2000);
+	driver.findElement(By.id("continue")).click();
+	driver.findElement(By.id("ap_password")).sendKeys("Shraddha@2000");
+	Thread.sleep(2000);
+	driver.findElement(By.id("signInSubmit")).click();
+	Thread.sleep(2000);
+	driver.findElement(By.id("twotabsearchtextbox")).sendKeys("boat airpods");
+	Thread.sleep(2000);
+	driver.findElement(By.id("nav-search-submit-button")).click();
+	Thread.sleep(2000);
+	driver.findElement(By.id("a-autoid-1-announce")).click();
+	Thread.sleep(2000);
+	
+	
+	
+	//driver.findElement(By.id("ap_email")).sendKeys("");
+	Thread.sleep(2000);
+	
+	}
+
+}
